@@ -1,6 +1,15 @@
 var sayMyName = function (name){
 	alert('My name is: '+name)
 }
+ var doCoolStuff = function () {
+ 	var currentClassname = document.getElementById('cool').className;
+
+ 	if (currentClassname == 'green') {
+ 		document.getElementById('cool').className = 'green red';
+ 	} else {
+ 		document.getElementById('cool').className = 'green';
+ 	}
+ }
 
 var car = {
 	make: 'VW',
